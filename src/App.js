@@ -14,13 +14,12 @@ function App() {
     <>
       <Layout >
           <Routes>
-            <Route path = "/" element={<Home />}/>
+            <Route path = "/" element={<Home />}/>                          
             <Route path = "/author/:slug " element={<AuthorPage />}/>
             <Route path = "/blog/:slug" element={<BlogPage />}/>
           </Routes>
       </Layout >
     </>
-    
   );
 }
 

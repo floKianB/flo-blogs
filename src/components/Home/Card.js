@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+// MUI
 import {
     Card,
     CardHeader,
@@ -11,13 +12,13 @@ import {
 import Divider from '@mui/material/Divider';
 import TurnedInNotIcon from '@mui/icons-material/TurnedInNot';
 import TurnedInIcon from '@mui/icons-material/TurnedIn';
+// Star Widget Generator Library
 import Stars from '../Utils/Stars';
 
 
-
 const CardComponent = ({title, postSlug, coverPhoto, author, id, description, stars, saveStatus}) => {
-    const [save, setSave] = useState(saveStatus);
-    
+    const [save, setSave] = useState(saveStatus);                                   // Set state for the saving status of the current card
+    // SAVE-POST and UN-SAVE-POST functions (on buttons) which will save and un-save the CARD-ID in local storage 
     const savePost = () => {
         if((localStorage.getItem('savedPostsID')) === null){
             localStorage.setItem('savedPostsID', JSON.stringify([postSlug]));
@@ -36,11 +37,10 @@ const CardComponent = ({title, postSlug, coverPhoto, author, id, description, st
     }
 
     return (
-    <div>
-        <Link to={`/blog/${postSlug}`} style={{ textDecoration: 'none', position: 'relative'}}>
-            <CardMedia component="img" height="155" image={coverPhoto.url} alt={postSlug}/>
-                <p style={{ position: 'absolute', margin: '0px', padding: '4px 10px', top: '0', left: '50%', WebkitTransform: 'translateX(-50%)',transform: 'translateX(-50%)', width:'max-content', textAlign: 'center', backgroundColor: 'white', borderBottomLeftRadius: '10px', borderBottomRightRadius: '10px', color: 'black' }}>{title}</p>
-        </Link>
+        <>
+            <Link to={`/blog/${postSlug}`} style={{ textDecoration: 'none', position: 'relative'}}>
+                <CardMedia component="img" maxheight="180" image={coverPhoto.url} alt={postSlug}/>      {/* Cover posters need to be a deigned thunbnail with title */}
+            </Link>
             <Card style={{ boxShadow: "rgba(0,0,0,0.1) 0px 4px 12px", borderRadius: "0px", padding: '7px 0'}} key={id}>
                 <Link to={`/author/${author.authorSlug}`} style={{ textDecoration: 'none', height: '60px' }}>
                     <CardHeader 
@@ -62,7 +62,7 @@ const CardComponent = ({title, postSlug, coverPhoto, author, id, description, st
                     </span>
                 </div>
             </Card>
-    </div>
+        </>
     );
 }
 

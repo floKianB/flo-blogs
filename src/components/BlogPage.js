@@ -10,7 +10,6 @@ import Stars from './Utils/Stars';
 const BlogPage = () => {
     const { slug } = useParams();
     const { loading, data, errors } = useQuery(GET_POST_BY_SLUG, {variables: { postSlug: slug }});
-    const navigate = useNavigate();
     if(loading) { return <h1> Loading... </h1>}
     if(errors) { return <h1> {errors} </h1>}
     else{
@@ -38,7 +37,7 @@ const BlogPage = () => {
                             borderRadius: '50%',
                             cursor: 'pointer',
                         }} 
-                        onClick={() => navigate(-1)} 
+                        onClick={() => document.location.href = '/'}
                     />
                 </Grid>
                 <Grid item xs={12} mt={8} >

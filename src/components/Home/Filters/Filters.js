@@ -31,7 +31,7 @@ const Filters = () => {
         <>
         <HeaderFilter />
 
-        <Card style={{ minHeight: '550px', minWidth: '100%', backgroundColor: 'rgb(24,118,209,0.9)', display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '30px 0' }} >
+        <Card style={{ minHeight: '500px', minWidth: '100%', backgroundColor: 'rgb(24,118,209,0.9)', display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '30px 0' }} >
             <Grid container align="center" spacing={1} sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', mt: '10px'}}>
                 <Grid item xs={12} > 
                     <FormControl variant="filled" style={{ width: '170px' }}>
