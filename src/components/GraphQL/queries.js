@@ -9,6 +9,7 @@ const GET_BLOGS_INFO = gql`
             title
             description
             stars
+            tag
             coverPhoto {
                 url
             }

@@ -14,9 +14,10 @@ import TurnedInNotIcon from '@mui/icons-material/TurnedInNot';
 import TurnedInIcon from '@mui/icons-material/TurnedIn';
 // Star Widget Generator Library
 import Stars from '../Utils/Stars';
+import './card.css'
 
 
-const CardComponent = ({title, postSlug, coverPhoto, author, id, description, stars, saveStatus}) => {
+const CardComponent = ({title, postSlug, coverPhoto, author, id, description, stars, saveStatus, tag}) => {
     const [save, setSave] = useState(saveStatus);                                   // Set state for the saving status of the current card
     // SAVE-POST and UN-SAVE-POST functions (on buttons) which will save and un-save the CARD-ID in local storage 
     const savePost = () => {
@@ -38,30 +39,30 @@ const CardComponent = ({title, postSlug, coverPhoto, author, id, description, st
 
     return (
         <>
-            <Link to={`/blog/${postSlug}`} style={{ textDecoration: 'none', position: 'relative'}}>
-                <CardMedia component="img" maxheight="180" image={coverPhoto.url} alt={postSlug}/>      {/* Cover posters need to be a deigned thunbnail with title */}
-            </Link>
-            <Card style={{ boxShadow: "rgba(0,0,0,0.1) 0px 4px 12px", borderRadius: "0px", padding: '7px 0'}} key={id}>
-                <Link to={`/author/${author.authorSlug}`} style={{ textDecoration: 'none', height: '60px' }}>
+            <div className='card' key={id}>
+                <Link to={`/blog/${postSlug}`}>
+                    <CardMedia component="img" className="poster" image={coverPhoto.url} alt={postSlug}/>      {/* Cover posters need to be a deigned thunbnail with title */}
+                </Link>
+                <Link to={`/author/${author.authorSlug}`}>
                     <CardHeader 
-                        style={{ padding: '15px'}}
+                        className='authorSection'
                         avatar={<Avatar src={author.profilePhoto.url} />} 
-                        title={<Typography component="p" variant="p" color="text.primary" style={{ margin: 0, }}>{author.name}<br/><p style={{ fontSize: "0.75rem", margin: 0, color: '#3a3b3c'}}>{author.field}</p></Typography>}
+                        title={<Typography component="p" variant="p" color="text.primary" style={{ margin: 0, padding: 0}}>{author.name}<br/><p style={{ fontSize: "0.75rem", margin: 0, color: '#3a3b3c', padding: '0'}}>{author.field}</p></Typography>}
                     />
                 </Link>
-                <Link to={`/blog/${postSlug}`} style={{ textDecoration: 'none', position: 'relative'}}>
-                    <CardContent compoenum="p" variant="p" style={{ color:"#3a3b3c", fontWeight: '300', fontSize: '0.9rem', textAlign: "justify", padding: '0 15px', minHeight: '80px'}}>
+                <Link to={`/blog/${postSlug}`} className="secondLinkToPost">
+                    <p className='description'>
                         {description}
-                    </CardContent>
+                    </p>
                 </Link>
-                <Divider style={{ padding: '10px 0', fontSize: '0.85rem'}} textAlign="center">Post Tag</Divider>
-                <div style = {{ display: "flex", justifyContent: "space-between", padding: '0 15px'}}>
+                <Divider className='divider' textAlign="center">{tag}</Divider>
+                <div className='downContainer'>
                     <Stars postStars={stars} size={24}/>
                     <span style = {{ display: "flex", gap: '5px'}}>
                         { save ? <TurnedInIcon onClick={()=> unsavePost()} color="primary" /> : <TurnedInNotIcon onClick={()=> savePost()}/> }
                     </span>
                 </div>
-            </Card>
+            </div>
         </>
     );
 }

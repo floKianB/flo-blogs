@@ -27,12 +27,12 @@ const Blogs = () => {
     // Load all posts from GraphQL API when we recived them from REDUX THUNK store.posts
     useEffect(() => {
         setActivePosts(recivedPosts);
-    }, [recivedPosts])
+    }, [recivedPosts, []])
     // Load filltered posts after any changes applied to our REDUX THUNK store.fillteredPosts
     useEffect(()=> {
         setActivePosts(fillteredPosts);
     }, [fillteredPosts])
-    console.log(activePosts)
+    
     return (
         
         <>
