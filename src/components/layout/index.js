@@ -1,11 +1,11 @@
 import React from 'react'
 import Footer from './Footer'
-import Header from './Header'
+import Navigation from './Navigation'
 
 const index = ({ children }) => {
     return (
         <>
-            <Header />
+            <Navigation />
             {children}
             <Footer />
         </>

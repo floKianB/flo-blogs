@@ -47,7 +47,7 @@ const CardComponent = ({title, postSlug, coverPhoto, author, id, description, st
                     <CardHeader 
                         className='authorSection'
                         avatar={<Avatar src={author.profilePhoto.url} />} 
-                        title={<Typography component="p" variant="p" color="text.primary" style={{ margin: 0, padding: 0}}>{author.name}<br/><p style={{ fontSize: "0.75rem", margin: 0, color: '#3a3b3c', padding: '0'}}>{author.field}</p></Typography>}
+                        title={<Typography component="p" variant="p" style={{ margin: 0, padding: 0}}>{author.name}<br/><p style={{ fontSize: "0.75rem", margin: 0, padding: '0'}}>{author.field}</p></Typography>}
                     />
                 </Link>
                 <Link to={`/blog/${postSlug}`} className="secondLinkToPost">

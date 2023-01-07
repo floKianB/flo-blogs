@@ -36,15 +36,9 @@ const Blogs = () => {
     return (
         
         <>
-        {/* Blog on top */}
-            <Card item xs={12} md={9} mt={4} sx={{ backgroundColor: 'rgb(24,118,209,0.9)', mb: 3 }}>
-                <p style={{ color: 'white', fontSize: '1.5rem', fontWeight: 'bold', margin: '15px 0', textAlign: 'center' }}>
-                    Blogs
-                </p>
-            </Card>
             {/* Blogs holder - 3Column || 2Column || 1Column */}
             
-            <Grid container spacing={7} >
+            <Grid container spacing={5} >
                 {
                 (activePosts.length !== 0) ?
                     (
