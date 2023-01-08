@@ -2,9 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 // MUI
 import {
-    Card,
     CardHeader,
-    CardContent,
     CardMedia,
     Avatar,
     Typography,

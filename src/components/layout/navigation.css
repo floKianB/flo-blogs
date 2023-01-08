@@ -1,14 +1,8 @@
-.navigationHolder{
-    width: 100%;
-    background-color: rgb(48, 47, 47);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 .navigation{
     display: grid;
-    width: 70%;
+    width: 65%;
     place-items: center;
     grid-template-columns: 1fr 6fr 1fr;
     padding: 0 10%;
@@ -16,19 +10,21 @@
 }
 
 .logo{
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 .links{
     display: flex;
+    align-items: start;
+    justify-content: center;
     color: white;
-    width: 75%;
-    justify-content: start;
-    gap: 90px;
-    font-size: 1.2rem;
+    gap: 80px;
+    font-size: 1.4rem;
+    width: 100%;
+    font-family: 'Work Sans';
+    font-weight: 500;
 }
 
-
-.savedBlogs{
-    width: 35px;
+.accountIcon{
+    width: 50px;
 }
