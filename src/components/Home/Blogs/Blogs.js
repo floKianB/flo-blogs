@@ -1,12 +1,17 @@
 import React, {useState} from 'react';
+import "./blogs.css";
 // MUI 
 import { Grid, Card, Container } from '@mui/material';
-import CardComponent from './Card';
+import CardComponent from '../Card';
 import { useSelector } from 'react-redux';
 import { useEffect } from 'react';
 // Toastify 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+
+
+import searchIcon from "../../../images/search.png";
+
 
 // Notification to show whe no post is available
 const Blogs = () => {
@@ -34,10 +39,13 @@ const Blogs = () => {
     }, [fillteredPosts])
     
     return (
-        
-        <>
-            {/* Blogs holder - 3Column || 2Column || 1Column */}
+        <div className="BlogsContainer">
+            <div className="searchContainer">
+                <img src={searchIcon} className='searchIcon'/>
+                <input type="text" className='search' placeholder='Search...'/>
+            </div>
             
+            {/* Blogs holder - 3Column || 2Column || 1Column */}
             <Grid container spacing={5} >
                 {
                 (activePosts.length !== 0) ?
@@ -71,7 +79,7 @@ const Blogs = () => {
                     )
                 } 
             </Grid>
-        </>
+        </div>
     )
 }
 

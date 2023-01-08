@@ -8,7 +8,7 @@ const Navigation = () => {
     
     return (
             <nav className="navigation">
-            <img className="logo" height="60" src={logo} alt="flo-logo"/>
+            <img className="logo" height="55" src={logo} alt="flo-logo"/>
             <div class="links">
                 <p className="eachLink">Categories</p>
                 <p className="eachLink">Authors</p>

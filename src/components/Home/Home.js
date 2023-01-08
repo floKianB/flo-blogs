@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Grid, Container } from '@mui/material';
-import Blogs from './Blogs';
+import Blogs from './Blogs/Blogs';
 import { FETCH_POSTS } from './Redux/postsActions';
 import { useDispatch, useSelector } from 'react-redux';
 import Header from './Header/Header';
@@ -16,7 +16,7 @@ const Home = () => {
         <>
             <Header/>
             <Container maxWidth="lg">
-                <Grid item xs={12} mb={7} mt={10} >
+                <Grid item xs={12} mb={7} mt={5} >
                     <Blogs />
                 </Grid>
             </Container>

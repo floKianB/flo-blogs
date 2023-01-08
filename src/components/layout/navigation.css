@@ -15,14 +15,18 @@
 
 .links{
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     justify-content: center;
     color: white;
     gap: 80px;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     width: 100%;
     font-family: 'Work Sans';
     font-weight: 500;
+}
+
+.eachLink{
+    padding-top: 7px;
 }
 
 .accountIcon{
