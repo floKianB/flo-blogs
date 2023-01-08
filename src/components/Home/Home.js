@@ -16,7 +16,7 @@ const Home = () => {
         <>
             <Header/>
             <Container maxWidth="lg">
-                <Grid item xs={12} mb={7} mt={5} >
+                <Grid item xs={12} mb={7} mt={4} >
                     <Blogs />
                 </Grid>
             </Container>

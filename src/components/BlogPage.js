@@ -6,6 +6,7 @@ import sanitizeHtml from "sanitize-html";
 import { Typography, Grid, Container, Avatar, Box } from '@mui/material';
 import ClearIcon from '@mui/icons-material/Clear';
 import Stars from './Utils/Stars';
+import Navigation from './layout/Navigation/Navigation';
 
 const BlogPage = () => {
     const { slug } = useParams();
@@ -19,22 +20,23 @@ const BlogPage = () => {
             <link rel="preconnect" href="https://fonts.googleapis.com"/>
             <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin = "true"/>
             <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet"/>
-
+        
+        <Navigation />
         <Container maxWidth="lg">
             <Grid container>
                 <Grid item xs={12} mt={9} display="flex" justifyContent="space-between" alignItems="center">
                     <Typography 
                         component="h1" 
                         variant="h2" 
-                        color="primary" 
+                        color="black" 
                     >
                         {data.post.title}
                     </Typography>
                     <ClearIcon 
                         fontSize="large"
                         sx={{   
-                            color: 'white', 
-                            backgroundColor: '#1876D1', 
+                            color: 'black', 
+                            backgroundColor: 'red', 
                             borderRadius: '50%',
                             cursor: 'pointer',
                         }} 

@@ -6,19 +6,21 @@
 }
 
 .searchContainer{
-    width: 40%;
+    width: 20%;
     height: max-content;
-    background-color: #53b997a8;
+    background-color: rgba(51, 160, 134, 0.777);
     border: none;
     border-radius: 12px;
     margin: 80px 0;
     padding: 0 5px;
     display: flex;
     align-items: center;
+    transition: all 0.35s ease;
 }
-.searchContainer:has(input:focus){
-    background-color: #4db08f;
 
+.searchContainer:has(input:focus), .searchContainer:has(input:active), .searchContainer:hover{
+    background-color: rgba(51,160,135,1);
+    width: 60%;
 }
 
 .search{
@@ -34,7 +36,6 @@
 .search::placeholder{
     color: rgba(255, 255, 255, 0.873);
 }
-
 
 .searchIcon{
     width: 50px;

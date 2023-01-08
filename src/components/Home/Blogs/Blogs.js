@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import "./blogs.css";
 // MUI 
-import { Grid, Card, Container } from '@mui/material';
+import { Grid, Container } from '@mui/material';
 import CardComponent from '../Card';
 import { useSelector } from 'react-redux';
 import { useEffect } from 'react';
@@ -41,7 +41,7 @@ const Blogs = () => {
     return (
         <div className="BlogsContainer">
             <div className="searchContainer">
-                <img src={searchIcon} className='searchIcon'/>
+                <img src={searchIcon} alt="search" className='searchIcon'/>
                 <input type="text" className='search' placeholder='Search...'/>
             </div>
             

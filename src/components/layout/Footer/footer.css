@@ -1,0 +1,14 @@
+.footerContainer{
+    width: 100%;
+    background-color: rgba(51,160,135,1);
+    position: relative;
+    bottom: 0;
+    
+}
+.footerText{
+    margin: 0;
+    padding: 10px 0;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
