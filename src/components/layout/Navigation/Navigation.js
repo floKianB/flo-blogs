@@ -2,7 +2,7 @@ import React from 'react';
 import "./navigation.css";
 
 import account from "../../../images/account.png";
-import logo from '../../../images/flo.png';
+import logo from '../../../images/Flo.png';
 
 const Navigation = () => {
     

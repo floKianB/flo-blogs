@@ -10,15 +10,14 @@
 .navigation{
     display: grid;
     width: 65%;
+    height: 100%;
     place-items: center;
     grid-template-columns: 1fr 6fr 1fr;
     padding: 0 10%;
     align-items: center;
-}
-
-.logo{
     padding: 20px 0;
 }
+
 
 .links{
     display: flex;
