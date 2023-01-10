@@ -1,12 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-// MUI
-import {
-    CardHeader,
-    CardMedia,
-    Avatar,
-    Typography,
-} from '@mui/material';
+
 import Divider from '@mui/material/Divider';
 import TurnedInNotIcon from '@mui/icons-material/TurnedInNot';
 import TurnedInIcon from '@mui/icons-material/TurnedIn';
@@ -39,14 +33,17 @@ const CardComponent = ({title, postSlug, coverPhoto, author, id, description, st
         <>
             <div className='card' key={id}>
                 <Link to={`/blog/${postSlug}`}>
-                    <CardMedia component="img" className="poster" image={coverPhoto.url} alt={postSlug}/>      {/* Cover posters need to be a deigned thunbnail with title */}
+                    <img className="poster" src={coverPhoto.url} alt={postSlug}/>      {/* Cover posters need to be a deigned thunbnail with title */}
                 </Link>
                 <Link to={`/author/${author.authorSlug}`}>
-                    <CardHeader 
-                        className='authorSection'
-                        avatar={<Avatar src={author.profilePhoto.url} />} 
-                        title={<Typography component="p" variant="p" style={{ fontSize: '1.05rem', margin: 0, fontWeight: '600', padding: 0, color: 'black'}}>{author.name}<br/><p style={{ fontSize: "0.8rem", margin: 0, padding: '0', color: 'black', fontWeight: '400'}}>{author.field}</p></Typography>}
-                    />
+                    <div className='authorSection'>
+                        <img className='authorImage' src={author.profilePhoto.url} alt='author'/>
+                        <div className='authorID'>
+                            <p className='authorName'>{author.name}</p>
+                            <p className='authorField'>{author.field}</p>
+                        </div>
+                            <p className='timeToRead'>3 min</p>
+                    </div>
                 </Link>
                 <Link to={`/blog/${postSlug}`} className="secondLinkToPost">
                     <p className='description'>
@@ -55,9 +52,9 @@ const CardComponent = ({title, postSlug, coverPhoto, author, id, description, st
                 </Link>
                 <Divider className='divider' textAlign="center">{tag}</Divider>
                 <div className='downContainer'>
-                    <Stars postStars={stars} size={24}/>
+                    <Stars color='red' postStars={stars} size={24}/>
                     <span style = {{ display: "flex", gap: '5px'}}>
-                        { save ? <TurnedInIcon onClick={()=> unsavePost()} color="primary" /> : <TurnedInNotIcon onClick={()=> savePost()}/> }
+                        { save ? <TurnedInIcon onClick={()=> unsavePost()} color='warning' /> : <TurnedInNotIcon onClick={()=> savePost()}/> }
                     </span>
                 </div>
             </div>

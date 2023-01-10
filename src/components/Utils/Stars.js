@@ -9,7 +9,7 @@ const Stars = ({postStars, size}) => {
             half={true}
             value={postStars}
             size={size}
-            activeColor="#ffd700"
+            activeColor="#FF8000"
         />
     )
 }
