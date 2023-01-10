@@ -26,23 +26,27 @@ const Blogs = () => {
     }
     // Get posts from our REDUX STORE
     const recivedPosts = useSelector(state => state.postsInfo.posts);
-    const fillteredPosts = useSelector(state => state.postsInfo.fillteredPosts);
     // initial store for all posts
     const [activePosts, setActivePosts] = useState(recivedPosts);
     // Load all posts from GraphQL API when we recived them from REDUX THUNK store.posts
     useEffect(() => {
         setActivePosts(recivedPosts);
-    }, [recivedPosts, []])
+    }, [recivedPosts])
     // Load filltered posts after any changes applied to our REDUX THUNK store.fillteredPosts
-    useEffect(()=> {
-        setActivePosts(fillteredPosts);
-    }, [fillteredPosts])
+
+
+    const search = (event) => {
+        const searchedPosts = recivedPosts.filter(eachPost => eachPost.title.toUpperCase().includes(event.target.value.toUpperCase()))
+        console.log(searchedPosts)
+        setActivePosts(searchedPosts)
+    }
+    console.log(activePosts)
     
     return (
         <div className="BlogsContainer">
             <div className="searchContainer">
                 <img src={searchIcon} alt="search" className='searchIcon'/>
-                <input type="text" className='search' placeholder='Search...'/>
+                <input type="text" className='search' placeholder='Search...' onChange={search}/>
             </div>
             
             {/* Blogs holder - 3Column || 2Column || 1Column */}
