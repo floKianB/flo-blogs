@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import "./navigation.css";
 
 import account from "../../../images/account.png";
@@ -11,9 +12,9 @@ const Navigation = () => {
             <nav className="navigation">
                 <img className="logo" height="55" src={logo} alt="flo-logo"/>
                 <div class="links">
-                    <p className="eachLink">Categories</p>
-                    <p className="eachLink">Authors</p>
-                    <p className="eachLink">Contact Us</p>
+                    <Link to="/home"><p>Home</p></Link>
+                    <Link to="/home"><p>Blogs</p></Link>
+                    <Link to="/home"><p>Contact Us</p></Link>
                 </div>
                 <img src={account} alt="account icon" className='accountIcon'/>
             </nav>
