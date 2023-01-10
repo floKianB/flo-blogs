@@ -29,6 +29,15 @@ const CardComponent = ({title, postSlug, coverPhoto, author, id, description, st
         setSave(!save);
     }
 
+    const shortenDescription = (description) => {
+        if(description.length < 100){
+            return description;
+        }
+        else{
+            return description.slice(0, 100) + '...'
+        }
+    }
+
     return (
         <>
             <div className='card' key={id}>
@@ -47,7 +56,7 @@ const CardComponent = ({title, postSlug, coverPhoto, author, id, description, st
                 </Link>
                 <Link to={`/blog/${postSlug}`} className="secondLinkToPost">
                     <p className='description'>
-                        {description}
+                        {shortenDescription(description)}
                     </p>
                 </Link>
                 <Divider className='divider' textAlign="center">{tag}</Divider>
