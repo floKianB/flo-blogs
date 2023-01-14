@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.NavigationContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+
+}
+
+.navigation{
+    display: grid;
+    width: 70%;
+    height: 100%;
+    place-items: center;
+    grid-template-columns: 1fr 6fr 0.5fr;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+.logo{
+    width: 90px;
+    object-fit: contain;
+}
+
+.links{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 150px;
+    gap: 80px;
+    font-size: 1.4rem;
+    width: 100%;
+    font-family: 'Work Sans';
+    font-weight: 500;
+}
+
+p{
+    color: white;
+}
+
+.eachLink{
+    text-decoration: none;
+    color: white;
+}
+
+
+.menueIcon{
+    width: 60px;
+}
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------- */
+
+.navigator{
+    width: 100vw;
+    height: 100vh;
+}
+.eachNavigatorContainer1, .eachNavigatorContainer2, .eachNavigatorContainer3, .eachNavigatorContainer4, .eachNavigatorContainer5{
+    padding: 0;
+    margin: 0;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+.eachNavigatorContainer1{
+    background-color: green;
+}
+.eachNavigatorContainer2{
+    background-color: rgb(248, 96, 1);
+}
+.eachNavigatorContainer3{
+    background-color: rgb(253, 216, 5);
+}
+.eachNavigatorContainer4{
+    background-color: rgb(0, 143, 245);
+}
+.eachNavigatorContainer5{
+    background-color: rgb(255, 1, 183);
+}
+
