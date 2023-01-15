@@ -5,25 +5,13 @@ import { Grid, Container } from '@mui/material';
 import CardComponent from './Cards/Card';
 import { useSelector } from 'react-redux';
 import { useEffect } from 'react';
-// Toastify 
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 
 
 import searchIcon from "../../../images/search.png";
 
 
-// Notification to show whe no post is available
 const Blogs = () => {
-    const notify = () => {
-        toast.error('No posts available', {
-            autoClose: 4000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: false,
-        });
-    }
+    
     // Get posts from our REDUX STORE
     const recivedPosts = useSelector(state => state.postsInfo.posts);
     // initial store for all posts
@@ -76,12 +64,10 @@ const Blogs = () => {
                                 </Grid>
                             );
                         })
-                    ) : (notify(),
-                        <Container item xs={12} sm={6} md={4} width="100%" align="center" >
-                            <ToastContainer style={{ position: 'relative'}}/>
-                        </Container>
-                    )
-                } 
+                    ) : <h1>No posts availble</h1>
+                }
+                    
+                
             </Grid>
         </div>
     )
