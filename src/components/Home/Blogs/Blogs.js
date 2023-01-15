@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import "./blogs.css";
 // MUI 
 import { Grid, Container } from '@mui/material';
-import CardComponent from '../Card';
+import CardComponent from './Cards/Card';
 import { useSelector } from 'react-redux';
 import { useEffect } from 'react';
 // Toastify 

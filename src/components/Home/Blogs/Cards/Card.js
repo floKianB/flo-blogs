@@ -5,7 +5,7 @@ import Divider from '@mui/material/Divider';
 import TurnedInNotIcon from '@mui/icons-material/TurnedInNot';
 import TurnedInIcon from '@mui/icons-material/TurnedIn';
 // Star Widget Generator Library
-import Stars from '../Utils/Stars';
+import Stars from '../../../Utils/Stars';
 import './card.css'
 
 
