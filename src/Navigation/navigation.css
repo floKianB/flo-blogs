@@ -38,6 +38,7 @@
 
 p{
     color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .eachLink{
@@ -53,14 +54,13 @@ p{
 
 
 
-
-
-
 /* ------------------------------------------------------------------- */
 
 .navigator{
+    position: absolute;
     width: 100vw;
     height: 100vh;
+    right: 100vw;
 }
 .eachNavigatorContainer1, .eachNavigatorContainer2, .eachNavigatorContainer3, .eachNavigatorContainer4, .eachNavigatorContainer5{
     padding: 0;
@@ -69,21 +69,27 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
+    font-size: 2.2rem;
+    transition: all 0.18s ease-in;
+    cursor: pointer;
+}
+.eachNavigatorContainer1:hover, .eachNavigatorContainer2:hover, .eachNavigatorContainer3:hover, .eachNavigatorContainer4:hover, .eachNavigatorContainer5:hover{
+    background-color: rgb(243, 139, 2);
+    font-size: 2.5rem;
 }
 .eachNavigatorContainer1{
-    background-color: green;
+    background-color: rgb(105, 106, 105);
 }
 .eachNavigatorContainer2{
-    background-color: rgb(248, 96, 1);
+    background-color: rgb(141, 139, 139);
 }
 .eachNavigatorContainer3{
-    background-color: rgb(253, 216, 5);
+    background-color: rgb(109, 109, 107);
 }
 .eachNavigatorContainer4{
-    background-color: rgb(0, 143, 245);
+    background-color: rgb(125, 125, 126);
 }
 .eachNavigatorContainer5{
-    background-color: rgb(255, 1, 183);
+    background-color: rgb(148, 145, 147);
 }
 
