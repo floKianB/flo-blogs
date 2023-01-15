@@ -22,11 +22,11 @@ const BlogPage = () => {
         
         <Container maxWidth="lg">
             <Grid container>
-                <Grid item xs={12} mt={9} display="flex" justifyContent="space-between" alignItems="center">
+                <Grid item xs={12} mt={9} display="flex" justifyContent="space-between" alignItems="center" style={{marginTop: '150px'}} >
                     <Typography 
                         component="h1" 
                         variant="h2" 
-                        color="black" 
+                        color="black"
                     >
                         {data.post.title}
                     </Typography>

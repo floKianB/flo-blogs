@@ -9,7 +9,7 @@ import Stars from '../../../Utils/Stars';
 import './card.css'
 
 
-const CardComponent = ({title, postSlug, coverPhoto, author, id, description, stars, saveStatus, tag}) => {
+const CardComponent = ({title, postSlug, coverPhoto, author, id, description, stars, saveStatus, tag, timeToRead}) => {
     const [save, setSave] = useState(saveStatus);                                   // Set state for the saving status of the current card
     // SAVE-POST and UN-SAVE-POST functions (on buttons) which will save and un-save the CARD-ID in local storage 
     const savePost = () => {
@@ -28,7 +28,7 @@ const CardComponent = ({title, postSlug, coverPhoto, author, id, description, st
         localStorage.setItem('savedPostsID', JSON.stringify(edittedList))
         setSave(!save);
     }
-
+    console.log(timeToRead);
     const shortenDescription = (description) => {
         if(description.length < 100){
             return description;
@@ -51,7 +51,7 @@ const CardComponent = ({title, postSlug, coverPhoto, author, id, description, st
                             <p className='authorName'>{author.name}</p>
                             <p className='authorField'>{author.field}</p>
                         </div>
-                            <p className='timeToRead'>3 min</p>
+                            <p className='timeToRead'>{timeToRead} min</p>
                     </div>
                 </Link>
                 <Link to={`/blog/${postSlug}`} className="secondLinkToPost">

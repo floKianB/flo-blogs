@@ -10,6 +10,7 @@ const GET_BLOGS_INFO = gql`
             description
             stars
             tag
+            timeToRead
             coverPhoto {
                 url
             }

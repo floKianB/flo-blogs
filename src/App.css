@@ -13,10 +13,10 @@
   }
 }
 
-/* ::-webkit-scrollbar {
-  background: #FBE7C6;
+::-webkit-scrollbar {
+  background: #000000;
 }
 ::-webkit-scrollbar-thumb {
-  background: #f9c777;
+  background: #ff7700;
   border-radius: 7px;
-} */
+}

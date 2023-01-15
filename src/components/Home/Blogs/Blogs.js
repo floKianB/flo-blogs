@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import "./blogs.css";
 // MUI 
-import { Grid, Container } from '@mui/material';
+import { Grid } from '@mui/material';
 import CardComponent from './Cards/Card';
 import { useSelector } from 'react-redux';
 import { useEffect } from 'react';
@@ -31,14 +31,14 @@ const Blogs = () => {
     console.log(activePosts)
     
     return (
-        <div className="BlogsContainer">
+        <div>
             <div className="searchContainer">
                 <img src={searchIcon} alt="search" className='searchIcon'/>
                 <input type="text" className='search' placeholder='Search...' onChange={search}/>
             </div>
             
             {/* Blogs holder - 3Column || 2Column || 1Column */}
-            <Grid container spacing={5} >
+            <Grid container spacing={5} className="BlogsContainer">
                 {
                 (activePosts.length !== 0) ?
                     (
