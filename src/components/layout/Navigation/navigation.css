@@ -48,13 +48,13 @@
     font-weight: 500;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1024px) {
     .navigation{
         width: 100%;
         padding: 5px 25px;
     }
     .links{
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         gap: 50px;
     }
 }
