@@ -31,7 +31,7 @@ const Blogs = () => {
     console.log(activePosts)
     
     return (
-        <div>
+        <>
             <div className="searchContainer">
                 <img src={searchIcon} alt="search" className='searchIcon'/>
                 <input type="text" className='search' placeholder='Search...' onChange={search}/>
@@ -67,7 +67,7 @@ const Blogs = () => {
                     ) : <h1>No posts availble</h1>
                 }
             </Grid>
-        </div>
+        </>
     )
 }
 
