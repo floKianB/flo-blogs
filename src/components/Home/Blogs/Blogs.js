@@ -66,8 +66,6 @@ const Blogs = () => {
                         })
                     ) : <h1>No posts availble</h1>
                 }
-                    
-                
             </Grid>
         </div>
     )
