@@ -19,7 +19,7 @@
     place-items: center;
     grid-template-columns: 1fr 6fr 0.5fr;
     align-items: center;
-    padding: 2px 0px;
+    padding: 10px 0px;
 }
 .shiftNavigator{
     display: none;

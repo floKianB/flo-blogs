@@ -66,6 +66,7 @@ const GET_POST_BY_SLUG = gql`
             title
             datePublished
             stars
+            timeToRead
             author {
                 field
                 name
