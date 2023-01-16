@@ -27,6 +27,12 @@
         border-radius: 15px;
     }
 }
+@media only screen and (max-width: 425px) {
+    .headerContainer{
+        margin-top: 95px;
+        border-radius: 15px;
+    }
+}
 
 
 .floHeader{
