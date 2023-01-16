@@ -21,6 +21,15 @@
     align-items: center;
     padding: 2px 0px;
 }
+.shiftNavigator{
+    display: none;
+}
+.menue{
+    display: none;
+}
+.closeButton{
+    display: none;
+}
 
 .logo{
     width: 90px;
@@ -38,6 +47,69 @@
     font-family: 'Work Sans';
     font-weight: 500;
 }
+@media only screen and (max-width: 425px) {
+    .links{
+        display: none;
+    }
+    .logoNavigation{
+        object-fit: contain;
+        width: 90px;
+    }
+    .shiftNavigator{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: black;
+        left: 0;
+        top: 0;
+        width: 80vw;
+        height: 100vh;
+        transition: all 0.6s ease-out;
+    }
+    .eachShiftedNavigator{
+        font-size: 1.5rem;
+        padding: 10px 12px;
+        color: white;
+        transition: all 0.08s ease-in;
+    }
+    .activeShiftedNavigator{
+        font-size: 1.5rem;
+        padding: 10px 12px;
+        color: black;
+        background-color: rgb(255, 102, 0);
+        transition: all 0.08s ease-in;
+    }
+    .navigation{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 20px;
+    }
+    .topNavigator{
+        position: relative;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 160px;
+        align-items: center;
+        margin: 30px 0; 
+    }
+    .closeButton{
+        display: flex;
+        width: 35px;
+        background-color: rgb(255, 102, 0);
+        border-radius: 50%;
+    }
+    .logo{
+        width: 80px;
+    }
+    .menue{
+        display: flex;
+        width: 55px;
+    }
+}
+
 
 .eachNavigator{
     padding: 7px 12px;
