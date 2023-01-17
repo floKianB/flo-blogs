@@ -93,3 +93,21 @@ p {
     font-weight: 500;
 }
 
+@media only screen and (max-width: 800px) {
+    .title{
+        font-size: 2.5rem;
+    }
+    .CommentsTop{
+        font-size: 2.5rem;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .title{
+        font-size: 2rem;
+    }
+    .CommentsTop{
+        font-size: 2rem;
+    }
+}
+
+
