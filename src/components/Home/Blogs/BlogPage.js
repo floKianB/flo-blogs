@@ -10,6 +10,7 @@ import sanitizeHtml from "sanitize-html";
 import ClearIcon from '@mui/icons-material/Clear';
 import Stars from '../../Utils/Stars';
 import Comment from './Comment/Comment';
+import AddComment from './Comment/AddComment';
 
 const BlogPage = () => {
     const { slug } = useParams();
@@ -67,7 +68,8 @@ const BlogPage = () => {
                 {/* Comments */}
                 <div className='comments'>
                     <h2 className="CommentsTop">Comments</h2>
-                    <hr/>
+                    <hr width='100%'/>
+                    <AddComment />
                     {
                         data.post.comment.map((eachComment, index) => <Comment key={index} name={eachComment.name} content={eachComment.content}/>)  
                     }
