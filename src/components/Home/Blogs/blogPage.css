@@ -102,6 +102,9 @@ p {
     }
 }
 @media only screen and (max-width: 425px) {
+    .blogContainer{
+        width: 93%;
+    }
     .title{
         font-size: 2rem;
     }
