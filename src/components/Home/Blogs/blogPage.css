@@ -102,14 +102,24 @@ p {
     }
 }
 @media only screen and (max-width: 425px) {
-    .blogContainer{
-        width: 93%;
-    }
     .title{
         font-size: 2rem;
     }
     .CommentsTop{
         font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .blogContainer{
+        width: 88%;
+    }
+}
+
+
+@media only screen and (max-width: 650px) {
+    .blogContainer{
+        width: 93%;
     }
 }
 
