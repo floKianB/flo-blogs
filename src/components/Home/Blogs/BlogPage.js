@@ -58,7 +58,9 @@ const BlogPage = () => {
                             <p className='field'>{data.post.author.field}</p>
                         </div>
                     </div>
-                    <Stars postStars={data.post.stars} size={30}/> 
+                    <div className='starsContainer'>
+                        <Stars postStars={data.post.stars} size={30} className='stars'/> 
+                    </div>
                 </div>
                 {/* Blog Content */}
                 <div dangerouslySetInnerHTML={{__html: sanitizeHtml(data.post.content.html)}} className='blogContent'></div>
