@@ -82,6 +82,14 @@ p {
     font-size: 1.3rem;
     font-family: 'Merriweather';
     line-height: 1.8rem;
+}
 
+.comments{
+    padding: 30px 0;
+}
+.CommentsTop{
+    font-size: 3rem;
+    font-family: 'Merriweather';
+    font-weight: 500;
 }
 

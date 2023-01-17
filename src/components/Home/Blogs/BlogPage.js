@@ -9,6 +9,7 @@ import { GET_POST_BY_SLUG } from '../../GraphQL/queries';
 import sanitizeHtml from "sanitize-html"; 
 import ClearIcon from '@mui/icons-material/Clear';
 import Stars from '../../Utils/Stars';
+import Comment from './Comment/Comment';
 
 const BlogPage = () => {
     const { slug } = useParams();
@@ -17,6 +18,8 @@ const BlogPage = () => {
     if(loading) { return <h1> Loading... </h1>}
     if(errors) { return <h1> {errors} </h1>}
     else{
+        console.log(data.post.comment)
+
         return (
         <>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -59,7 +62,16 @@ const BlogPage = () => {
                 </div>
                 {/* Blog Content */}
                 <div dangerouslySetInnerHTML={{__html: sanitizeHtml(data.post.content.html)}} className='blogContent'></div>
+                {/* Comments */}
+                <div className='comments'>
+                    <h2 className="CommentsTop">Comments</h2>
+                    <hr/>
+                    {
+                        data.post.comment.map((eachComment, index) => <Comment key={index} name={eachComment.name} content={eachComment.content}/>)  
+                    }
+                </div>
         </div>
+
         </>
             
         )

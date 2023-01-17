@@ -77,6 +77,10 @@ const GET_POST_BY_SLUG = gql`
             content {
                 html
             }
+            comment {
+                name
+                content
+            }
         }
     }
 `;

@@ -1,0 +1,22 @@
+h2{
+    margin: 0;
+}
+.comment{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+.profilePic{
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: rgb(255, 102, 0);
+    color: #ffff;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
