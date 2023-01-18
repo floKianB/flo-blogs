@@ -87,13 +87,17 @@
 }
 .timeToRead{
     font-size: 0.9rem;
-    background-color: rgba(236, 138, 34, 0.611);
+    background-color: rgb(236, 138, 34);
     color: rgb(70, 63, 63);
     text-align: center;
     margin: 0 0;
     padding: 4px 8px;
     border-radius: 15px;
     width: fit-content;
+    position: absolute;
+    left: 5px;
+    top: 159px;
+    z-index: 8;
 }
 
 .secondLinkToPost{

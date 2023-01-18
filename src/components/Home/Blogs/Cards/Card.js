@@ -44,6 +44,7 @@ const CardComponent = ({title, postSlug, coverPhoto, author, id, description, st
                 <span className="saveIcon">
                     { save ? <TurnedInIcon onClick={()=> unsavePost()} color='warning' /> : <TurnedInNotIcon onClick={()=> savePost()}/> }
                 </span>
+                <p className="timeToRead">{timeToRead} min</p>
 
                 <Link to={`/blog/${postSlug}`}>
                     <img className="poster" src={coverPhoto.url} alt={postSlug}/>      {/* Cover posters need to be a deigned thunbnail with title */}
