@@ -1,29 +1,63 @@
 *{
-    text-decoration: none!important;
-}
-.poster{
-    height: 190px;
-    width: 100%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    object-fit: cover;
+    text-decoration: none;
 }
 
 .card{
-    box-shadow: rgba(0, 0, 0, 0.17) 0px 4px 6px -1px, rgba(0, 0, 0, 0.1) 0px 2px 4px -1px;
     padding: 0px 0;
-    border-radius: 10px;
-    background-color: rgb(255, 255, 255);
+    background-color: transparent;
     cursor: pointer;
-    
+    position: relative;
 }
 
+.poster{
+    height: 190px;
+    width: 100%;
+    object-fit: cover;
+}
+.underPoster{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+}
+.saveIcon{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    right: 8px;
+    top: 6px;
+    background-color: white;
+    padding: 4px;
+}
+
+.metaData{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 7px;
+}
+.authorIcon, .calendarIcon{
+    width: 20px;
+    height: 20px;
+}
+.date{
+    font-size: 0.95rem;
+}
 .authorSection{
-    padding: 10px 15px;
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    display: flex;
+    gap: 10px;
     align-items: center;
 }
+.dateSection{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+
+
 .authorImage{
     width: 55px;
     height: 55px;
@@ -66,13 +100,12 @@
     position: relative;
 }
 
-.description{
+.blogTitle{
     color: rgb(0, 0, 0);
-    margin: 0;
-    font-weight: 300; 
-    font-size: 1rem; 
-    text-align: justify; 
-    padding: 5px 15px;
+    font-weight: 450; 
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+    margin-top: 10px;
 }
 
 .divider{

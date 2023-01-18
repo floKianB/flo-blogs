@@ -4,7 +4,6 @@ import { Route, Routes } from 'react-router-dom';
 import Layout from './components/layout';
 import Home from './components/Home/Home';
 import BlogPage from './components/Home/Blogs/BlogPage';
-import AuthorPage from './components/AuthorPage';
 
 
 
@@ -15,7 +14,6 @@ function App() {
       <Layout >
           <Routes>
             <Route path = "/" element={<Home />}/>                          
-            <Route path = "/author/:slug " element={<AuthorPage />}/>
             <Route path = "/blog/:slug" element={<BlogPage />}/>
           </Routes>
       </Layout >

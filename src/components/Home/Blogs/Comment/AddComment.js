@@ -13,7 +13,6 @@ function AddComment({ slug }) {
     const submitHandler = () => {
         sendComment();
     }
-    console.log(data)
     
     return (
         <form>

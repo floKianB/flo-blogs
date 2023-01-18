@@ -28,7 +28,6 @@ const Blogs = () => {
         console.log(searchedPosts)
         setActivePosts(searchedPosts)
     }
-    console.log(activePosts)
     
     return (
         <>

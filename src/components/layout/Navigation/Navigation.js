@@ -22,8 +22,8 @@ const Navigation = () => {
                 <img src={menue} className='menue' alt="menue" onClick={shiftNavigation} />
                 <img className="logo" height="55" src={logo} alt="flo-logo"/>
                 <div className="links">
-                    <Link className="link" to="/home"><p className={ location === '/home' ? "activeNavigator" : "eachNavigator"} >Home</p></Link>
-                    <Link className="link" to="/blogs"><p className={ location === '/blogs' ? "activeNavigator" : "eachNavigator"} >Blogs</p></Link>
+                    <Link className="link" to="/"><p className={ location === '/' ? "activeNavigator" : "eachNavigator"} >Home</p></Link>
+                    <Link className="link" to="/saved-blogs"><p className={ location === '/saved-blogs' ? "activeNavigator" : "eachNavigator"} >Saved Blogs</p></Link>
                     <Link className="link" to="/contactUs"><p className={ location === '/contactUs' ? "activeNavigator" : "eachNavigator"} >Contact Us</p></Link>
                 </div>
                 {/* ======================================================= */}
@@ -43,7 +43,7 @@ const Navigation = () => {
                         />
                     </div>
                     <Link to="/home"><p className={ location === '/home' ? "activeShiftedNavigator" : "eachShiftedNavigator"} >Home</p></Link>
-                    <Link to="/blogs"><p className={ location === '/blogs' ? "activeShiftedNavigator" : "eachShiftedNavigator"} >Blogs</p></Link>
+                    <Link to="/saved-blogs"><p className={ location === '/saved-blogs' ? "activeShiftedNavigator" : "eachShiftedNavigator"} >Saved Blogs</p></Link>
                     <Link to="/contactUs"><p className={ location === '/contactUs' ? "activeShiftedNavigator" : "eachShiftedNavigator"} >Contact Us</p></Link>
                 </div>
                 <img src={account} alt="account icon" className='accountIcon'/>
