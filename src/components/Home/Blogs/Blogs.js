@@ -8,7 +8,7 @@ import { useEffect } from 'react';
 
 
 import searchIcon from "../../../images/search.png";
-
+import loadingSpinner from "../../../images/loadSpinner.gif";
 
 const Blogs = () => {
     
@@ -64,7 +64,7 @@ const Blogs = () => {
                                 </Grid>
                             );
                         })
-                    ) : <h1>No posts availble</h1>
+                    ) : <img src={loadingSpinner} alt="loading" className="loadSpinner"/>
                 }
             </Grid>
         </>

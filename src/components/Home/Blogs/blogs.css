@@ -4,6 +4,15 @@
     justify-content: flex-start;
     align-items: center;
     width: min-content; 
+    min-height: 80vh;
+}
+
+.loadSpinner{
+    width: 300px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 20%)
+
 }
 
 .searchContainer{
@@ -12,7 +21,7 @@
     background-color: rgba(239, 137, 12, 0.849);
     border: none;
     border-radius: 12px;
-    margin-top: 65px;
+    margin-top: 55px;
     margin-bottom: 50px;
     padding: 0;
     display: flex;
