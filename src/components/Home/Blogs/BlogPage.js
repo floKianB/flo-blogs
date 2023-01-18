@@ -19,7 +19,6 @@ const BlogPage = () => {
     if(loading) { return <h1> Loading... </h1>}
     if(errors) { return <h1> {errors} </h1>}
     else{
-        console.log(data.post.comment)
 
         return (
         <>
@@ -69,7 +68,7 @@ const BlogPage = () => {
                 <div className='comments'>
                     <h2 className="CommentsTop">Comments</h2>
                     <hr width='100%'/>
-                    <AddComment />
+                    <AddComment slug={slug} />
                     {
                         data.post.comment.map((eachComment, index) => <Comment key={index} name={eachComment.name} content={eachComment.content}/>)  
                     }
