@@ -67,7 +67,7 @@ const CardComponent = ({title, postSlug, coverPhoto, author, id, description, st
                     </span>
                     <span className='dateSection'>
                         <img src={calendarIcon} alt="calendar" className="calendarIcon"/>
-                        <p className="date">{datePublished}</p>
+                        <p className="date">{datePublished.replaceAll('-','/')}</p>
                     </span>
                 </div>
                 

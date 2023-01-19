@@ -14,7 +14,6 @@ import AddComment from './Comment/AddComment';
 
 const BlogPage = () => {
     const { slug } = useParams();
-    console.log(slug);
     const { loading, data, errors } = useQuery(GET_POST_BY_SLUG, {variables: { postSlug: slug }});
     const navigate = useNavigate();
     if(loading) { return <h1> Loading... </h1>}

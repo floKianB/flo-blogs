@@ -7,6 +7,7 @@
     background-color: transparent;
     cursor: pointer;
     position: relative;
+    max-width: 370px;
 }
 
 .poster{
@@ -14,23 +15,21 @@
     width: 100%;
     object-fit: cover;
 }
+
 .underPoster{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 5px 0;
 }
-.saveIcon{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    right: 8px;
-    top: 6px;
-    background-color: white;
-    padding: 4px;
+.blogTitle{
+    color: rgb(0, 0, 0);
+    font-weight: 450; 
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+    margin-top: 10px;
 }
+
 
 .metaData{
     display: flex;
@@ -58,67 +57,30 @@
 
 
 
-.authorImage{
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-
-}
-.authorID{
-    height: min-content;
+.saveIcon{
+    position: absolute;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 4px;
-    margin-left: 8px;
-}
-.authorName, .authorField, .timeToRead{
-    margin: 0px;
-    color: black;
-
-}
-.authorName{
-    font-weight: 600;
-    font-size: 1.05rem;
-}
-.authorField{
-    font-size: 0.9rem;
-    font-weight: 400;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    right: 8px;
+    top: 6px;
+    background-color: white;
+    padding: 4px;
 }
 .timeToRead{
     font-size: 0.9rem;
-    background-color: rgb(236, 138, 34);
+    background-color: #F7F8FC;
     color: rgb(70, 63, 63);
     text-align: center;
     margin: 0 0;
-    padding: 4px 8px;
-    border-radius: 15px;
+    padding: 4px 10px;
+    border-top-right-radius: 10px;
     width: fit-content;
     position: absolute;
-    left: 5px;
-    top: 159px;
+    left: -2px;
+    top: 167px;
     z-index: 8;
+    font-weight: 600;
 }
 
-.secondLinkToPost{
-    position: relative;
-}
-
-.blogTitle{
-    color: rgb(0, 0, 0);
-    font-weight: 450; 
-    font-size: 1.25rem;
-    margin-bottom: 15px;
-    margin-top: 10px;
-}
-
-.divider{
-    padding-top: 15px;
-    font-size: 1rem;
-}
-
-.downContainer{
-    display: flex;
-    justify-content: space-between;
-    padding: 7px 15px;
-}

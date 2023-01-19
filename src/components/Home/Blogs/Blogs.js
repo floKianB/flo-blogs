@@ -6,7 +6,6 @@ import CardComponent from './Cards/Card';
 import { useSelector } from 'react-redux';
 import { useEffect } from 'react';
 
-
 import searchIcon from "../../../images/search.png";
 import loadingSpinner from "../../../images/loadSpinner.gif";
 
@@ -21,11 +20,8 @@ const Blogs = () => {
         setActivePosts(recivedPosts);
     }, [recivedPosts])
     // Load filltered posts after any changes applied to our REDUX THUNK store.fillteredPosts
-
-
     const search = (event) => {
         const searchedPosts = recivedPosts.filter(eachPost => eachPost.title.toUpperCase().includes(event.target.value.toUpperCase()))
-        console.log(searchedPosts)
         setActivePosts(searchedPosts)
     }
     

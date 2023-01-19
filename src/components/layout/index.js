@@ -7,7 +7,7 @@ const index = ({ children }) => {
         <>
             <Navigation />
             {children}
-            <Footer />
+            {/* <Footer /> */}
         </>
         
     )
