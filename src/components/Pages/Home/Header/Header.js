@@ -1,8 +1,8 @@
 import React from 'react';
 
 
-import floheader from '../../../images/Flo-header.png';
-import slogan from '../../../images/slogan.png';
+import floheader from '../../../../images/Flo-header.png';
+import slogan from '../../../../images/slogan.png';
 import "./header.css";
 
 function Header() {

@@ -2,7 +2,7 @@ import { useMutation } from '@apollo/client';
 import React from 'react';
 import { useState } from 'react';
 import "./addComment.css";
-import { COMMENT_ON_POST } from "../../../GraphQL/mutations";
+import { COMMENT_ON_POST } from "../../../../GraphQL/mutations";
 
 
 function AddComment({ slug }) {

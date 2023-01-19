@@ -1,5 +1,5 @@
 import { useQuery } from '@apollo/client';
-import { GET_BLOGS_INFO } from '../../GraphQL/queries';
+import { GET_BLOGS_INFO } from '../../../GraphQL/queries';
 
 const requestPosts = () => ({
     type: 'POSTS_REQUEST'

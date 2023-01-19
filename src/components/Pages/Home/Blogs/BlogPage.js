@@ -4,11 +4,11 @@ import { useParams, useNavigate } from 'react-router-dom';
 
 import "./blogPage.css";
 
-import { GET_POST_BY_SLUG } from '../../GraphQL/queries';
+import { GET_POST_BY_SLUG } from '../../../GraphQL/queries';
 
 import sanitizeHtml from "sanitize-html"; 
 import ClearIcon from '@mui/icons-material/Clear';
-import Stars from '../../Utils/Stars';
+import Stars from '../../../Utils/Stars';
 import Comment from './Comment/Comment';
 import AddComment from './Comment/AddComment';
 

@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import authorIcon from "../../../../images/authorIcon.png";
-import calendarIcon from "../../../../images/calendar.png";
+import authorIcon from "../../../images/authorIcon.png";
+import calendarIcon from "../../../images/calendar.png";
 
 import TurnedInNotIcon from '@mui/icons-material/TurnedInNot';
 import TurnedInIcon from '@mui/icons-material/TurnedIn';
 // Star Widget Generator Library
-import Stars from '../../../Utils/Stars';
+import Stars from '../../Utils/Stars';
 import './card.css'
 
 

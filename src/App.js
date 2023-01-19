@@ -2,9 +2,9 @@ import React from 'react';
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Layout from './components/layout';
-import Home from './components/Home/Home';
-import BlogPage from './components/Home/Blogs/BlogPage';
-import SavedBlogs from './components/SavedBlogs/SavedBlogs';
+import Home from './components/Pages/Home/Home';
+import BlogPage from './components/Pages/Home/Blogs/BlogPage';
+import SavedBlogs from './components/Pages/SavedBlogs/SavedBlogs';
 
 
 function App() {

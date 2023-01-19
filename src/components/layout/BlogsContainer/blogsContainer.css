@@ -1,4 +1,4 @@
-.savedBlogsContainer{
+.blogsContainer{
     margin-top: 140px;
     width: 70%;
     position: relative;
@@ -8,8 +8,4 @@
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 40px;
     place-items: center;
-    
-}
-.eachCard{
-    width: fit-content;
 }

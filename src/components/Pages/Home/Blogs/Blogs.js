@@ -2,12 +2,12 @@ import React, {useState} from 'react';
 import "./blogs.css";
 // MUI 
 import { Grid } from '@mui/material';
-import CardComponent from './Cards/Card';
+import CardComponent from '../../../layout/Cards/Card';
 import { useSelector } from 'react-redux';
 import { useEffect } from 'react';
 
-import searchIcon from "../../../images/search.png";
-import loadingSpinner from "../../../images/loadSpinner.gif";
+import searchIcon from "../../../../images/search.png";
+import loadingSpinner from "../../../../images/loadSpinner.gif";
 
 const Blogs = () => {
     

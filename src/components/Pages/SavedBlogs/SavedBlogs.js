@@ -3,9 +3,9 @@ import "./savedBlogs.css";
 import { FETCH_POSTS } from '../Home/Redux/postsActions';
 
 import { useDispatch, useSelector } from 'react-redux';
-import { Grid } from '@mui/material';
-import loadingSpinner from "../../images/loadSpinner.gif";
-import CardComponent from '../Home/Blogs/Cards/Card';
+import loadingSpinner from "../../../images/loadSpinner.gif";
+import CardComponent from '../../layout/Cards/Card';
+import BlogsContainer from '../../layout/BlogsContainer/BlogsContainer';
 
 function SavedPosts() {
     const dispatch = useDispatch();
@@ -17,7 +17,7 @@ function SavedPosts() {
     }, [recivedPosts])
     
     return (
-        <div className="savedBlogsContainer">
+        <BlogsContainer>
             {
                 (activePosts.length !== 0) ?
                     (
@@ -34,8 +34,8 @@ function SavedPosts() {
                             
                         })
                     ) : <img src={loadingSpinner} alt="loading" className="loadSpinner"/>
-                }
-        </div>
+            }
+        </BlogsContainer>
     )
 }
 
