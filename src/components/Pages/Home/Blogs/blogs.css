@@ -12,7 +12,6 @@
     position: relative;
     left: 50%;
     transform: translate(-50%, 30%)
-
 }
 
 .searchContainer{
@@ -28,6 +27,7 @@
     align-items: center;
     justify-content: center;
     transition: all 0.35s ease;
+    padding: 4px 6px;
 }
 @media only screen and (max-width: 800px) {
     .searchContainer {

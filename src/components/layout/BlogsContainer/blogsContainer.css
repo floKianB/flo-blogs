@@ -1,11 +1,12 @@
 .blogsContainer{
     margin-top: 140px;
-    width: 70%;
+    width: 1200px;
     position: relative;
     left: 50%;
     transform: translate(-50%, 0);
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     row-gap: 40px;
-    place-items: center;
+    column-gap: 50px;
+    place-items: left;
 }
+
