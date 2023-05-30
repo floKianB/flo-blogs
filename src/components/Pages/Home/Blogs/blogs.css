@@ -6,6 +6,11 @@
     width: min-content; 
     min-height: 80vh;
 }
+@media only screen and (max-width: 425px) {
+    .BlogsContainer{
+        margin: 0 auto;
+    }
+}
 
 .loadSpinner{
     width: 300px;
@@ -27,7 +32,7 @@
     align-items: center;
     justify-content: center;
     transition: all 0.35s ease;
-    padding: 4px 6px;
+    padding: 4px 0px;
 }
 @media only screen and (max-width: 800px) {
     .searchContainer {
@@ -38,6 +43,8 @@
 @media only screen and (max-width: 425px) {
     .searchContainer{
         margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 

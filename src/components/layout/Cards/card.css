@@ -4,6 +4,7 @@
 
 .card{
     padding: 0px 0;
+    margin: 0 auto;
     background-color: transparent;
     cursor: pointer;
     position: relative;

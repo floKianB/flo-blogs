@@ -7,6 +7,6 @@
     display: grid;
     row-gap: 40px;
     column-gap: 50px;
-    place-items: left;
+    place-items: center;
 }
 
