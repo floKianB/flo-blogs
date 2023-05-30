@@ -42,9 +42,9 @@ const Navigation = () => {
                             onClick={closeShiftedNavigator}
                         />
                     </div>
-                    <Link to="/home"><p className={ location === '/home' ? "activeShiftedNavigator" : "eachShiftedNavigator"} >Home</p></Link>
-                    <Link to="/saved-blogs"><p className={ location === '/saved-blogs' ? "activeShiftedNavigator" : "eachShiftedNavigator"} >Saved Blogs</p></Link>
-                    <Link to="/contactUs"><p className={ location === '/contactUs' ? "activeShiftedNavigator" : "eachShiftedNavigator"} >Contact Us</p></Link>
+                    <Link to="/" onClick={closeShiftedNavigator}><p className={ location === '/' ? "activeShiftedNavigator" : "eachShiftedNavigator"} >Home</p></Link>
+                    <Link to="/saved-blogs" onClick={closeShiftedNavigator}><p className={ location === '/saved-blogs' ? "activeShiftedNavigator" : "eachShiftedNavigator"} >Saved Blogs</p></Link>
+                    <Link to="/contactUs" onClick={closeShiftedNavigator}><p className={ location === '/contactUs' ? "activeShiftedNavigator" : "eachShiftedNavigator"} >Contact Us</p></Link>
                 </div>
                 <img src={account} alt="account icon" className='accountIcon'/>
                 
